@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(requestLogger);
 
 app.use(helmet());
-app.use(limiter)
+app.use(limiter);
 app.use(router);
 app.use(errorLogger);
 app.use(errors());

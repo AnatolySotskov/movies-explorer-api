@@ -10,10 +10,10 @@ const {
   deleteMovieValidation,
 } = require('../middlewares/validations');
 
-moviesRouter.get('/movies', getMovies);
+moviesRouter.get('/', getMovies);
 
-moviesRouter.post('/movies', createMovieValidation, createMovie);
+moviesRouter.post('/', createMovieValidation, createMovie);
 
-moviesRouter.delete('/movies/:movieId', deleteMovieValidation, deleteMovie);
+moviesRouter.delete('/:_id', deleteMovieValidation, deleteMovie);
 
 module.exports = moviesRouter;
