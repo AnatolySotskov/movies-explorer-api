@@ -30,3 +30,5 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`Сервер запущен. Порт сервера ${PORT}`);
 });
+
+// kek<3
